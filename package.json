@@ -1,0 +1,33 @@
+{
+  "name": "postcss-swedish-stylesheets",
+  "version": "0.0.0",
+  "description": "PostCSS plugin PostCSS plugin for writing Swedish Style Sheets",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "swedish"
+  ],
+  "author": "Johnie Hjelm <johnie.hjelm@symbio.com>",
+  "license": "MIT",
+  "repository": "johnie/postcss-swedish-stylesheets",
+  "bugs": {
+    "url": "https://github.com/johnie/postcss-swedish-stylesheets/issues"
+  },
+  "homepage": "https://github.com/johnie/postcss-swedish-stylesheets",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "postcss": "^5.0.2",
+    "swedish-css-properties": "^1.0.0",
+    "swedish-css-values": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-mocha": "^2.1.3"
+  },
+  "scripts": {
+    "test": "gulp"
+  }
+}
