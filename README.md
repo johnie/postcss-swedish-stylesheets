@@ -1,4 +1,4 @@
-# PostCSS Swedish Stylesheets [![Build Status][ci-img]][ci]
+# <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg" alt="Sweden" height="32px" width="auto"> PostCSS Swedish Stylesheets [![Build Status][ci-img]][ci]
 
 [PostCSS] plugin for writing Swedish Style Sheets.
 
