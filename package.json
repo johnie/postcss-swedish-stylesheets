@@ -18,8 +18,8 @@
   "dependencies": {
     "lodash": "^3.10.1",
     "postcss": "^5.0.2",
-    "swedish-css-properties": "^1.0.0",
-    "swedish-css-values": "^1.0.2"
+    "swedish-css-properties": "^1.0.1",
+    "swedish-css-values": "^1.0.3"
   },
   "devDependencies": {
     "chai": "^3.2.0",
