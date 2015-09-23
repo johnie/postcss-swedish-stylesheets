@@ -55,7 +55,7 @@ var output = postcss(sweCSS())
     bokstav-mellanrum: 2px;
     flyt: vänster;
     visa: ingen;
-    nivå: 1000;
+    nivå: 1000 !viktigt;
 }
 ```
 
@@ -72,7 +72,7 @@ var output = postcss(sweCSS())
     letter-spacing: 2px;
     float: left;
     display: none;
-    z-index: 1000;
+    z-index: 1000 !important;
 }
 ```
 
