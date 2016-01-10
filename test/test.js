@@ -70,7 +70,7 @@ describe('postcss-swedish-stylesheets', function () {
                 }
             },
             done
-        )
+        );
     });
 
     it('custom values', function (done) {
@@ -83,7 +83,7 @@ describe('postcss-swedish-stylesheets', function () {
                 }
             },
             done
-        )
+        );
     });
 
 });
