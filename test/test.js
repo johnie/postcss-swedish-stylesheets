@@ -60,4 +60,30 @@ describe('postcss-swedish-stylesheets', function () {
         );
     });
 
+    it('custom properties', function (done) {
+        test(
+            'a{ kulör: white !viktigt; }',
+            'a{ color: white !important; }',
+            {
+                properties: {
+                    color: 'kulör'
+                }
+            },
+            done
+        )
+    });
+
+    it('custom values', function (done) {
+        test(
+            'a{ color: supervit !viktigt; }',
+            'a{ color: white !important; }',
+            {
+                values: {
+                    white: 'supervit'
+                }
+            },
+            done
+        )
+    });
+
 });

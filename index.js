@@ -4,7 +4,18 @@ var SEProperties = require('swedish-css-properties');
 var SEValues = require('swedish-css-values');
 
 module.exports = postcss.plugin('postcss-swedish-stylesheets', function (opts) {
-    opts = opts || {};
+    opts = opts || {
+        properties: {},
+        values: {}
+    };
+
+    if (_.isObject(opts.properties)) {
+        SEProperties = _.merge(SEProperties, opts.properties);
+    }
+
+    if (_.isObject(opts.values)) {
+        SEValues = _.merge(SEValues, opts.values);
+    }
 
     // Work with options here
 
