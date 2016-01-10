@@ -6,7 +6,7 @@ var SEValues = require('swedish-css-values');
 module.exports = postcss.plugin('postcss-swedish-stylesheets', function (opts) {
     opts = opts || {
         properties: {},
-        values: {}
+        values:     {}
     };
 
     if (_.isObject(opts.properties)) {
