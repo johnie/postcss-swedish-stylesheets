@@ -8,7 +8,10 @@
     "postcss-plugin",
     "swedish"
   ],
-  "author": "Johnie Hjelm <johnie.hjelm@symbio.com>",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "author": "Johnie Hjelm <johnie@hjelm.im>",
   "license": "MIT",
   "repository": "johnie/postcss-swedish-stylesheets",
   "bugs": {
@@ -16,18 +19,38 @@
   },
   "homepage": "https://github.com/johnie/postcss-swedish-stylesheets",
   "dependencies": {
-    "lodash": "^4.16.2",
-    "postcss": "^5.0.2",
+    "lodash": "^4.17.21",
     "swedish-css-properties": "^1.0.2",
     "swedish-css-values": "^1.0.3"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
-    "gulp": "^3.9.0",
-    "gulp-eslint": "^3.0.1",
-    "gulp-mocha": "^3.0.1"
+    "clean-publish": "^4.0.1",
+    "eslint": "^8.19.0",
+    "eslint-config-postcss": "^4.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.2",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.14"
+  },
+  "peerDependencies": {
+    "postcss": "^8.19.0"
   },
   "scripts": {
-    "test": "gulp"
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*.js": "eslint *.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss",
+    "rules": {
+      "max-len": "off"
+    },
+    "env": {
+      "jest": true
+    }
+  },
+  "clean-publish": {
+    "cleanDocs": true
   }
 }
