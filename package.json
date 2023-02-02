@@ -1,6 +1,6 @@
 {
   "name": "postcss-swedish-stylesheets",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "PostCSS plugin PostCSS plugin for writing Swedish Style Sheets",
   "keywords": [
     "postcss",
